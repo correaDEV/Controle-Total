@@ -7,7 +7,10 @@
   <h2>Visão Geral</h2>
     <p>
         Este projeto é uma aplicação web destinada ao gerenciamento de finanças pessoais, permitindo que os usuários controlem suas rendas e despesas de maneira eficiente. O frontend foi desenvolvido com Angular e utiliza a biblioteca ng-zorro-antd para criar uma interface moderna e responsiva. O backend foi implementado com Spring Boot, fornecendo APIs RESTful robustas para operações de CRUD, além de funcionalidades para exibição de gráficos e estatísticas financeiras.
-    </p>
+   
+   </p>
+![image](https://github.com/user-attachments/assets/1e226b5a-cb43-48af-b7a1-08f8a19f9c03)
+
 
   <h2>Como o Projeto Nasceu</h2>
     <p>
