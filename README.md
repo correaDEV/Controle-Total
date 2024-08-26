@@ -1,5 +1,4 @@
 
-<title>Projeto de Gerenciamento de Finanças Pessoais</title>
    
 </head>
 <body>
