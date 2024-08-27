@@ -1,0 +1,208 @@
+/* logo */
+.logo {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: linear-gradient(45deg, #007bff, #00bcd4); /* Modern gradient background */
+    margin: 16px;
+    padding: 0 16px;
+    color: white;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.logo:hover {
+    background: linear-gradient(45deg, #0056b3, #0097a7); /* Darker gradient on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* avatar */
+.avatar {
+    width: 50px; /* Slightly larger for emphasis */
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #fff; /* White border for contrast */
+}
+
+/* user-info */
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-info strong {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.user-info span {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+/* layout */
+.layout {
+    min-height: 100vh;
+    background: #f5f5f5; /* Light background for contrast */
+}
+
+/* nz-sider */
+nz-sider {
+    overflow: auto;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: #061229; /* Dark background for the sidebar */
+    color: #fff;
+    padding-top: 20px;
+    width: 250px; /* Fixed width for consistent layout */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow for more depth */
+    border-right: 4px solid #007bff; /* Accent border for emphasis */
+    transition: width 0.3s ease; /* Smooth transition for width change */
+}
+
+nz-sider:hover {
+    width: 280px; /* Expand sidebar on hover for better visibility */
+}
+
+/* nz-sider ul */
+nz-sider ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nz-sider ul li {
+    padding: 15px 20px; /* Increased padding for better touch targets */
+    transition: background 0.3s ease, color 0.3s ease, padding 0.3s ease; /* Smooth transitions */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px; /* Larger font size for readability */
+    border-bottom: 1px solid #1a1a1a; /* Subtle border for separation */
+    position: relative;
+}
+
+nz-sider ul li:hover {
+    background: rgba(255, 255, 255, 0.1); /* Highlight background on hover */
+    color: #47e4e4; /* Change text color on hover */
+    padding-left: 25px; /* Add padding on hover for visual effect */
+}
+
+/* Indicator for active item */
+nz-sider ul li.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 60%;
+    background: #47e4e4; /* Active item indicator color */
+}
+
+/* nz-sider menu icons */
+nz-sider nz-icon {
+    margin-right: 12px; /* Adjusted margin for better spacing */
+    font-size: 22px; /* Larger icons for visibility */
+    transition: transform 0.3s ease; /* Smooth icon transition */
+}
+
+nz-sider ul li:hover nz-icon {
+    transform: scale(1.1); /* Slight zoom effect on icons */
+}
+
+/* Tooltips */
+nz-sider ul li::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 100%;
+    padding: 5px 10px;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+nz-sider ul li:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* right-layout */
+.right-layout {
+    margin-left: 250px; /* Width of the sidebar */
+}
+
+/* nz-header */
+nz-header { 
+    padding: 0;
+    height: 75px;
+    background: #222; /* Darker header */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 250px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Light shadow for header */
+}
+
+/* nz-content */
+nz-content {
+    margin: 24px 16px 0;
+    overflow: initial;
+}
+
+/* inner-content */
+.inner-content {
+    padding: 24px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 12px; /* Rounded corners for content */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* nz-footer */
+nz-footer {
+    text-align: center;
+    background: #333; /* Footer background */
+    color: #fff;
+    padding: 20px;
+    margin-top: 24px;
+}
+
+/* Ajuste no estilo dos gráficos */
+canvas {
+  display: block;
+  width: 100% !important;  /* Garante que o canvas ocupe toda a largura do contêiner */
+  height: 300px !important; /* Define uma altura fixa para os gráficos, ajuste conforme necessário */
+}
+
+/* Estilo para o cartão contendo o gráfico */
+nz-card {
+  margin-bottom: 20px;
+  padding: 16px; /* Adiciona padding interno ao cartão */
+  border-radius: 12px; /* Mantém os cantos arredondados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  background: #ffffff; /* Fundo branco para o cartão */
+}
+
+/* Ajuste para o layout da seção com gráficos */
+div[nz-col] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Ajuste de margem para os gráficos */
+.nz-card + .nz-card {
+  margin-top: 20px; /* Espaçamento entre os cartões */
+}

@@ -1,0 +1,64 @@
+<div>
+    <div nz-row>
+      <div nz-col nzFlex="2">
+        <nz-card nzType="inner" style="margin-top: 16px;" nzTitle="Adicionar renda">
+          <form nz-form [formGroup]="rendaForm" class="custom-form" (ngSubmit)="submitForm()">
+            <nz-form-item>
+              <nz-form-control nzErrorTip="Por favor insira o título!">
+                <input type="text" nz-input formControlName="title" placeholder="Digite o título!">
+              </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+              <nz-form-control nzErrorTip="Por favor insira o valor!">
+                <input type="number" nz-input formControlName="amount" placeholder="Insira o valor!">
+              </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+              <nz-form-control nzErrorTip="Por favor insira a data!">
+                <nz-date-picker style="width: 100%;" formControlName="date"></nz-date-picker>
+              </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+              <nz-form-control>
+                <textarea nz-input placeholder="Insira a descrição" [nzAutosize]="{ minRows: 2, maxRows: 6 }"
+                  formControlName="description"></textarea>
+              </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+              <nz-form-control nzErrorTip="Por favor insira a categoria!">
+                <nz-select nzShowSearch nzAllowClear formControlName="category" nzPlaceHolder="Selecione a categoria">
+                  <nz-option *ngFor="let category of listOfCategory" [nzLabel]="category" [nzValue]="category">
+                  </nz-option>
+                </nz-select>
+              </nz-form-control>
+            </nz-form-item>
+            <button nz-button nzType="primary" nzBlock [disabled]="rendaForm.invalid" class="w-100">
+              Postar Renda
+            </button>
+          </form>
+        </nz-card>
+      </div>
+      <div nz-col nzFlex="3" style="margin-left: 20px;">
+        <nz-card nzType="inner" style="margin-top: 16px;" nzTitle="Listagem de Rendas">
+          <div nz-card-grid style="width: 100%;" *ngFor="let renda of rendas">
+            <div nz-row>
+              <div nz-col nzSpan="22">
+                <span nz-icon nzType="message" nzTheme="outline"></span> {{ renda.title }}
+                -
+                <span nz-icon nzType="dollar" nzTheme="outline"></span> {{ renda.amount }}
+                -
+                <span nz-icon nzType="clock-circle" nzTheme="outline"></span> {{ renda.date }}
+                -
+                <span nz-icon nzType="comment" nzTheme="outline"></span> {{ renda.category }}
+              </div>
+              <div nz-col nzSpan="2" style="font-size: 15px;">
+                <span nz-icon nzType="edit" nzTheme="fill" style="color: blue;" routerLink="/renda/{{renda.id}}/edit"></span>
+                <span nz-icon nzType="delete" (click)="deleteRenda(renda.id)" nzTheme="fill" style="color: red;"></span>
+              </div>
+            </div>
+          </div>
+        </nz-card>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,58 @@
+<div>
+  <!-- Informações principais -->
+  <div nz-row>
+    <h3 nz-card-grid nzSpan="8" nz-col [ngStyle]="gridStyle">
+      Equilíbrio: <span style="color: rgb(69, 91, 218);">R${{stats?.equilibrio}}</span>
+    </h3>
+    <h3 nz-card-grid nzSpan="8" nz-col [ngStyle]="gridStyle">
+      Renda Total: <span style="color: green;">R${{stats?.renda}}</span>
+    </h3>
+    <h3 nz-card-grid nzSpan="8" nz-col [ngStyle]="gridStyle">
+      Despesa Total: <span style="color: red;">R${{stats?.despesa}}</span>
+    </h3>
+  </div>
+
+   
+  <div nz-row style="margin-top: 20px;">
+     
+    <div nz-col nzFlex="2 1 0" style="margin-right: 20px;">
+      <nz-card nzType="inner" nzTitle="Gráfico Renda">
+        <canvas #rendaLineChartRef></canvas>
+      </nz-card>
+      <nz-card nzType="inner" nzTitle="Gráfico Despesa" style="margin-top: 20px;">
+        <canvas #despesaLineChartRef></canvas>
+      </nz-card>
+    </div>
+
+     
+    <div nz-col nzFlex="1 1 0">
+      <!-- Histórico Recente -->
+      <nz-card nzType="inner" nzTitle="Histórico Recente" style="margin-bottom: 20px;">
+        <div nz-card-grid style="display: flex; flex-direction: column; gap: 20px; align-items: center; justify-content: center; text-align: center; width: 100%;">
+          <div style="width: 100%; border-bottom: 1px solid #ddd; padding-bottom: 10px;">
+            <span style="color: rgb(30, 196, 66); font-size: 16px; font-weight: bold;">+{{stats?.rendarecente?.amount}} {{stats?.rendarecente?.title}}</span>
+          </div>
+          <div style="width: 100%; padding-top: 10px;">
+            <span style="color: red; font-size: 16px; font-weight: bold;">-{{stats?.despesarecente?.amount}} {{stats?.despesarecente?.title}}</span>
+          </div>
+        </div>
+      </nz-card>
+
+      <!-- Renda -->
+      <nz-card nzType="inner" nzTitle="Renda" style="margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; padding: 10px;">
+          <div>Mínima: <span style="font-weight: bold;">R${{stats?.rendaminima}}</span></div>
+          <div>Máxima: <span style="font-weight: bold;">R${{stats?.rendamaxima}}</span></div>
+        </div>
+      </nz-card>
+
+      <!-- Despesa -->
+      <nz-card nzType="inner" nzTitle="Despesa" style="margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; padding: 10px;">
+          <div>Mínima: <span style="font-weight: bold;">R${{stats?.despesaminima}}</span></div>
+          <div>Máxima: <span style="font-weight: bold;">R${{stats?.despesaminmaxima}}</span></div>
+        </div>
+      </nz-card>
+    </div>
+  </div>
+</div>

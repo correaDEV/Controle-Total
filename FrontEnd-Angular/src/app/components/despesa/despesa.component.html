@@ -1,0 +1,62 @@
+<div nz-row [nzGutter]="16">
+  <div nz-col nzSpan="10"> 
+    <nz-card nzType="inner" style="margin-top:16px;" nzTitle="Adicionar despesa">
+      <form [formGroup]="despesaForm" (ngSubmit)="submitForm()" class="custom-form">
+        <!-- Formulário -->
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Por favor, insira o título">
+            <input type="text" nz-input formControlName="title" placeholder="Insira o título"/>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Por favor, insira o valor">
+            <input type="number" nz-input formControlName="amount" placeholder="Selecione o valor"/>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Por favor, selecione a data!">
+            <nz-date-picker style="width: 100%;" formControlName="date" placeholder="Selecione a data">
+            </nz-date-picker>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-control>
+            <textarea nz-input placeholder="Insira uma descrição" [nzAutosize]="{minRows: 2, maxRows: 6}" formControlName="description"></textarea>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item nzErrorTip="Por favor insira a categoria!">
+          <nz-form-control>
+            <nz-select nzAllowClear nzPlaceHolder="Selecione a categoria" formControlName="category">
+              <nz-option *ngFor="let category of listOfCategory" [nzLabel]="category" [nzValue]="category"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <button nz-button nzType="primary" nzBlock [disabled]="despesaForm.invalid" class="w-100">
+          Adicionar despesa
+        </button>   
+      </form>
+    </nz-card>
+  </div>
+  <!-- Coluna Despesa Passada -->
+  <div nz-col nzSpan="14"> <!-- Maior, ocupando 2/3 -->
+    <nz-card nzType="inner" style="margin-top:16px;" nzTitle="Despesa Passada">
+      <div nz-card-grid style="width: 100%;" *ngFor="let despesa of despesas">
+        <div nz-row>
+          <div nz-col nzSpan="18">
+            <span nz-icon nzType="message" nzTheme="outline"></span> {{despesa.title}}
+            - 
+            <span nz-icon nzType="dollar" nzTheme="outline"></span> {{despesa.amount}}
+            - 
+            <span nz-icon nzType="clock-circle" nzTheme="outline"></span> {{despesa.date}}
+            - 
+            <span nz-icon nzType="comment" nzTheme="outline"></span> {{despesa.category}}
+          </div>
+          <div nz-col nzSpan="6" style="font-size: 15px;">
+            <span nz-icon nzType="edit" nzTheme="fill" style="color:blue;" routerLink="/despesa/{{despesa.id}}/edit"></span>
+            <span nz-icon nzType="delete" nzTheme="fill" style="color:red; margin-left: 10px;" (click)="deleteDespesa(despesa.id)"></span>
+          </div>
+        </div>
+      </div>
+    </nz-card>
+  </div>
+</div>
