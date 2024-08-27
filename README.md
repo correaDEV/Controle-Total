@@ -1,7 +1,7 @@
 
  
 
-   <h1>Projeto de Gerenciamento de Finanças Pessoais</h1>
+   <h1>Projeto de Gerenciamento de Finanças Pessoais</h1> 
 
   <h2>Visão Geral</h2>
     <p>
