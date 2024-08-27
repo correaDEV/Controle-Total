@@ -19,11 +19,6 @@
 
 
 
-  <h2>Como o Projeto Nasceu</h2>
-    <p>
-        A ideia deste projeto surgiu da minha paixão por organização financeira e desejo por estabilidade. Eu gosto de manter o controle sobre todos os meus gastos e economizar de forma consciente. Por isso, desenvolvi uma solução que não só me permite ter uma visão clara das minhas finanças, mas também facilita a tomada de decisões financeiras mais informadas.
-    </p>
-
   <h2>Tecnologias Utilizadas</h2>
 
    <h3>Frontend:</h3>
