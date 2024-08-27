@@ -1,7 +1,7 @@
 
    <h1>Projeto de Gerenciamento de Finanças Pessoais</h1> 
 
-  <h2>Visão Geral</h2>
+  <h2>Visão Geral</h2> 
     <p>
         Este projeto é uma aplicação web destinada ao gerenciamento de finanças pessoais, permitindo que os usuários controlem suas rendas e despesas de maneira eficiente. O frontend foi desenvolvido com Angular e utiliza a biblioteca ng-zorro-antd para criar uma interface moderna e responsiva. O backend foi implementado com Spring Boot, fornecendo APIs RESTful robustas para operações de CRUD, além de funcionalidades para exibição de gráficos e estatísticas financeiras.
    
