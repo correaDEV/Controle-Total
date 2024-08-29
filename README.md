@@ -48,3 +48,8 @@
         Este projeto integra as melhores práticas e tecnologias modernas para oferecer uma solução eficaz de gerenciamento financeiro pessoal. Com uma arquitetura bem estruturada e componentes organizados, ele serve como uma base sólida para futuras expansões e customizações, atendendo às necessidades de quem deseja ter controle total sobre suas finanças.
     </p>
 
+   <h2>Agradecimentos</h2>
+   <p>
+Gostaria de expressar minha profunda gratidão à Academia Java por proporcionar um ambiente de aprendizado tão enriquecedor. Agradeço especialmente aos professores Lucas, Érico e Fabrício, cujos ensinamentos e orientação foram fundamentais para o desenvolvimento deste projeto. Também sou muito grato aos meus colegas de academia pelo apoio e colaboração durante todo o processo. Essa jornada foi verdadeiramente transformadora.
+    </p>
+
