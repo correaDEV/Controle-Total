@@ -4,7 +4,7 @@
 
    <h2>Pré-requisitos</h2>
     <p>Antes de executar o projeto, certifique-se de ter instalado em sua máquina:</p>
-    <ul>
+    <ul> 
         <li>Java Development Kit (JDK) 17</li>
         <li>Maven 3.6+ (opcional, caso não utilize o wrapper do Maven incluído no projeto)</li>
         <li>MySQL Server (ou outro banco de dados configurado no projeto)</li>
