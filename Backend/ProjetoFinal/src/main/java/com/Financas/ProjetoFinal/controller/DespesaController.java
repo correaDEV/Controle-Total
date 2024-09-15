@@ -1,3 +1,5 @@
+// src/main/java/com/Financas/ProjetoFinal/controller/DespesaController.java
+
 package com.Financas.ProjetoFinal.controller;
 
 import com.Financas.ProjetoFinal.dto.DespesaDTO;
@@ -46,7 +48,7 @@ public class DespesaController {
     public ResponseEntity<?> atualizacaoDespesa(@PathVariable Long id, @RequestBody DespesaDTO dto) {
         try {
             Despesa updatedDespesa = despesaService.updateDespesa(id, dto);
-            System.out.println("Despesa atualizada: " + updatedDespesa); // Corrigido para imprimir updatedDespesa
+            System.out.println("Despesa atualizada: " + updatedDespesa);
             return ResponseEntity.ok(updatedDespesa);
         } catch (EntityNotFoundException ex) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
