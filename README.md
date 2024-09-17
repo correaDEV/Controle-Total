@@ -27,11 +27,10 @@
 
   <h3>Backend:</h3>
     <ul>
-        <li><strong>Spring Boot:</strong> Framework para a construção do backend da aplicação, facilitando a criação de APIs RESTful.</li>
+        <li><strong>Spring Boot:</strong> Framework para a construção do backend da aplicação</li>
         <li><strong>Spring Data JPA:</strong> Usado para operações de persistência e interação com o banco de dados.</li>
         <li><strong>MySQL Connector/J:</strong> Driver JDBC para integração com o banco de dados MySQL.</li>
         <li><strong>Lombok:</strong> Biblioteca para reduzir o código boilerplate em Java, como getters, setters e construtores.</li>
-        <li><strong>Spring Boot Starter Test:</strong> Conjunto de ferramentas para teste de unidades e integração.</li>
     </ul>
     <ul>
         <li><strong>Java 17:</strong> Versão do Java utilizada no desenvolvimento do backend.</li>
