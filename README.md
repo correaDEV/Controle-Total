@@ -1,54 +1,57 @@
- 
-   <h1>Projeto de Gerenciamento de Finanças Pessoais</h1> 
 
-  <h2>Visão Geral</h2> 
-    <p>
-        Este projeto é uma aplicação web destinada ao gerenciamento de finanças pessoais, permitindo que os usuários controlem suas rendas e despesas de maneira eficiente. O frontend foi desenvolvido com Angular e utiliza a biblioteca ng-zorro-antd para criar uma interface moderna e responsiva. O backend foi implementado com Spring Boot, fornecendo APIs RESTful robustas para operações de CRUD, além de funcionalidades para exibição de gráficos e estatísticas financeiras.
-   
-   </p>
-   
-   ![image](https://github.com/user-attachments/assets/73b08eb4-09cc-42b9-917d-42fac0c91db0) ![image](https://github.com/user-attachments/assets/abfd1dc7-d09e-48e9-9df2-97e5a253ddf0)
+# Controle Total - Projeto Final da 7ª Academia Java 💼
+
+Este é o projeto final da 7ª Academia Java. A aplicação **Controle Total** é um sistema de gerenciamento financeiro pessoal com frontend em **Angular** e backend em **Spring Boot**.
+
+  ![image](https://github.com/user-attachments/assets/73b08eb4-09cc-42b9-917d-42fac0c91db0) ![image](https://github.com/user-attachments/assets/abfd1dc7-d09e-48e9-9df2-97e5a253ddf0)
+
+## 📦 Estrutura do Projeto
+
+O projeto é dividido em duas partes principais:
+
+1. **Frontend**: Desenvolvido em Angular.
+2. **Backend**: Desenvolvido em Spring Boot.
+
+### 🖥 Frontend
+
+O frontend da aplicação é responsável pela interface do usuário e é desenvolvido em **Angular** com a biblioteca **ng-zorro-antd** para componentes UI.
+
+- **Repositório Frontend**: [Frontend - Angular](https://github.com/correaDEV/Controle-Total/tree/main/FrontEnd-Angular)
+- **Documentação do Frontend**: Disponível na pasta `FrontEnd-Angular` do repositório.
+
+#### ✔️ Principais funcionalidades do Frontend
+
+- Dashboard com visão geral de rendas e despesas
+- Formulários de cadastro e edição de transações
+- Gráficos e relatórios interativos
+- Responsivo e otimizado para diferentes dispositivos
+
+#### 🔧 Tecnologias utilizadas no Frontend
+
+- **Angular** 
+- **ng-zorro-antd** para componentes UI
+- **TypeScript** para desenvolvimento
+- **SCSS** para estilização
+
+### ⚙️ Backend
+
+O backend da aplicação fornece uma API RESTful para gerenciar dados financeiros e é desenvolvido em **Spring Boot**.
+
+- **Repositório Backend**: [Backend - Spring Boot](https://github.com/correaDEV/Controle-Total/tree/main/Backend/ProjetoFinal)
+- **Documentação do Backend**: Disponível na pasta `ProjetoFinal` do repositório.
+
+#### ✔️ Principais funcionalidades do Backend
+
+- API REST para gerenciamento de rendas e despesas (CRUD)
+- Persistência de dados com MySQL
+
+#### 🔧 Tecnologias utilizadas no Backend
+
+- **Java 17**
+- **Spring Boot 3.3.2**
+- **JPA/Hibernate** para persistência de dados
+- **MySQL** como banco de dados
+- **Lombok** para simplificação do código
 
 
-
-
-
-
-
-
-
-  <h2>Tecnologias Utilizadas</h2>
-
-   <h3>Frontend:</h3>
-    <ul>
-        <li><strong>Angular:</strong> Framework para a construção do frontend da aplicação.</li>
-        <li><strong>ng-zorro-antd:</strong> Biblioteca de componentes UI para Angular, utilizada para criar uma interface elegante e funcional.</li>
-    </ul>
-
-  <h3>Backend:</h3>
-    <ul>
-        <li><strong>Spring Boot:</strong> Framework para a construção do backend da aplicação</li>
-        <li><strong>Spring Data JPA:</strong> Usado para operações de persistência e interação com o banco de dados.</li>
-        <li><strong>MySQL Connector/J:</strong> Driver JDBC para integração com o banco de dados MySQL.</li>
-        <li><strong>Lombok:</strong> Biblioteca para reduzir o código boilerplate em Java, como getters, setters e construtores.</li>
-    </ul>
-    <ul>
-        <li><strong>Java 17:</strong> Versão do Java utilizada no desenvolvimento do backend.</li>
-    </ul>
-
-   <h2>Funcionalidades Principais</h2>
-    <ul>
-        <li><strong>Dashboard:</strong> Visão geral do balanço financeiro, exibindo rendas e despesas totais.</li>
-        <li><strong>Gerenciamento de Rendas e Despesas:</strong> CRUD completo para adicionar, editar, visualizar e deletar rendas e despesas.</li>
-        <li><strong>Estatísticas e Gráficos:</strong> Visualização gráfica das finanças para uma análise mais profunda e intuitiva.</li>
-    </ul>
-    <h2>Conclusão</h2>
-    <p>
-        Este projeto integra as melhores práticas e tecnologias modernas para oferecer uma solução eficaz de gerenciamento financeiro pessoal. Com uma arquitetura bem estruturada e componentes organizados, ele serve como uma base sólida para futuras expansões e customizações, atendendo às necessidades de quem deseja ter controle total sobre suas finanças.
-    </p>
-
-   <h2>Agradecimentos</h2>
-   <p>
-Gostaria de expressar minha profunda gratidão à Academia Java por proporcionar um ambiente de aprendizado tão enriquecedor. Agradeço especialmente aos professores Lucas, Érico e Fabrício, cujos ensinamentos e orientação foram fundamentais para o desenvolvimento deste projeto. Também sou muito grato aos meus colegas de academia pelo apoio e colaboração durante todo o processo. Essa jornada foi verdadeiramente transformadora.
-    </p>
 
